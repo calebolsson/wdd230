@@ -1,0 +1,36 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* border: 10px solid black; */
+    /* max-width: 40%; */
+    text-align: left;
+    align-items: center;
+    margin-bottom: 5%;
+    background-color: aquamarine;
+    border-radius: 100%;
+}
+
+header h1 {
+    margin-left: 10%;
+}
+
+#me {
+    grid-column: 1;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+body {
+    max-width: 40%;
+    text-align: left;
+}
+
+body h2, li {
+    margin-left: 10%;
+}
+
+footer {
+    margin: 5%;
+    text-align: center;
+    /* border: 10px solid black; */
+}
