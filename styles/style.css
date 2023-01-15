@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Quantico&display=swap');
+
+h1, h2, h3, h4, p, a, li {
+    font-family: Quantico;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -21,12 +27,17 @@ header h1 {
 }
 
 body {
-    max-width: 40%;
-    text-align: left;
+    max-width: 100%;
 }
 
-body h2, li {
+body h2 {
+    margin-left: 0;
+    text-align: center;
+}
+
+body li {
     margin-left: 10%;
+    text-align: left;
 }
 
 footer {
