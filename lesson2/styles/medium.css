@@ -1,0 +1,16 @@
+@media only screen and (max-width: 80em) {
+
+    header {
+        background-color: blue;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gridbox img {
+        margin: 0 5%;
+        width: 90%;
+    }
+
+}

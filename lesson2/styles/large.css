@@ -9,6 +9,7 @@ header {
 body {
     padding: 2.5%;
     font-family: Quantico;
+    width: 95%;
 }
 
 .content {
@@ -21,4 +22,8 @@ body {
     border-radius: 1%;
     margin: 1%;
     padding: 1%;
+}
+
+.gridbox img {
+    width: 100%;
 }

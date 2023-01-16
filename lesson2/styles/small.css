@@ -1,0 +1,11 @@
+@media only screen and (max-width: 40em) {
+
+    header {
+        background-color: blueviolet;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+}
