@@ -1,7 +1,21 @@
 @media only screen and (min-width: 32.5em) {
 
     body {
-        margin: 5% 30%;
+        margin: 5% 0;
+        display: grid;
+        grid-template-columns: 1fr 32.5em 1fr;
+        grid-template-rows: 10.8em 1fr 1fr;
+    }
+
+    header {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        max-height: 10.8em;
+    }
+
+    main {
+        grid-column: 2/3;
+        grid-row: 2/3;
     }
 
     footer {
