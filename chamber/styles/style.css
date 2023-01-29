@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Quantico&display=swap');
+
+body {
+    max-width: 100%;
+    font-family: Quantico;
+    background-color: #cae9ff;
+}
+
+header {
+    color: #cae9ff;
+    background-color: #1b4965;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+    width: 98%;
+    padding: 1%;
+}
+
+nav {
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+nav button {
+    color: #cae9ff;
+    background-color: #1b4965;
+    border-color: #1b4965;
+}
+
+#todaydate {
+    background-color: #5fa8d3;
+    align-self: flex-end;
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+    margin: 1%;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+main div {
+    border: 1px solid black;
+    min-width: 20%;
+    padding: 1%;
+    margin: 1%;
+}
+
+#hero {
+    min-width: 25%;
+    flex-grow: 2;
+}
+
+footer {
+    color: #cae9ff;
+    background-color: #1b4965;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1%;
+    width: 98%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#maplink {
+    padding: 1%;
+}
+
+#smalltext {
+    width: 100%;
+}
+
+.sea-foam {
+    background-color: #bee9e8;
+}
+
+.soft-teal {
+    background-color: #62b6cb;
+}
+
+.navy-blue {
+    background-color: #1b4965;
+}
+
+.blue-grey,
+.colored {
+    background-color: #cae9ff;
+}
+
+.soft-blue {
+    background-color: #5fa8d3;
+}
