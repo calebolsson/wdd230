@@ -5,31 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The Boerne Chamber of Commerce was established to help our local business to flourish together as part of an inclusive and engaging community.">
     <title>Boerne Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <i class="fa fa-university fa-5x" class="logo"></i>
+        <i id="logo" class="fa fa-university fa-5x"></i>
         <h1>Boerne Chamber of Commerce</h1>
-        <nav>
-            <button>Discover</button>
-            <button>Directory</button>
-            <button>Join Us</button>
-            <button>Contact Us</button>
+        <nav id="menu">
+            <button href="#">Discover</button>
+            <button href="#">Directory</button>
+            <button href="#">Join Us</button>
+            <button href="#">Contact Us</button>
         </nav>
-        <div>
+        <button id="menuicon">
+            <i id="menuopen" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            <i id="menuclose" class="fa fa-close fa-2x" aria-hidden="true"></i>
+        </button>
+        <div id="socials">
             <a href="https://facebook.com"><img src="images/facebook.png"></a>
             <a href="https://instagram.com"><img src="images/instagram.png"></a>
             <a href="https://twitter.com"><img src="images/twitter.png"></a>
         </div>
-        <div id="todaydate">Today's Date</div>
+        <span id="todaydate"></span>
     </header>
     <main>
         <div id="events">Event</div>
@@ -39,18 +45,28 @@
         <div id="spotlight">Spotlights Flexbox</div>
         <div id="news">News</div>
     </main>
-    <footer>
-        <i class="fa fa-university fa-2x" class="logo"></i>
+    <footer id="footer">
+        <i class="fa fa-university fa-2x"></i>
         <div id="maplink">
             <p>Boerne Chamber of Commerce</p>
             <p>420 Smoky Way</p>
             <p>Boerne, Texas 78006</p>
         </div>
+        <div id="contactinfo">
+            <p>(000) 000-0000</p>
+        </div>
         <div id="smalltext">
-            <p>&copy; Year Boerne Chamber | Caleb Olsson | WDD230 Project | Last Modified: Date</p>
+            <hr>
+            <p>&copy;
+                <span id="currentyear"></span> Boerne Chamber | Caleb Olsson | WDD230 Project | Last Modified: <span
+                    id="lastmod"></span>
+            </p>
         </div>
     </footer>
-    <script></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/lastModified.js"></script>
+    <script src="scripts/dateHandler.js"></script>
+    <script src="scripts/logoHandler.js"></script>
 </body>
 
 </html>

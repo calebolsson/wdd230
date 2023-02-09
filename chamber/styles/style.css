@@ -4,6 +4,7 @@ body {
     max-width: 100%;
     font-family: Quantico;
     background-color: #cae9ff;
+    position: relative;
 }
 
 header {
@@ -24,13 +25,27 @@ nav {
     flex: 1;
 }
 
-nav button {
+button {
     color: #cae9ff;
     background-color: #1b4965;
     border-color: #1b4965;
 }
 
+#menuicon {
+    border: none;
+    z-index: 99;
+}
+
+#menuopen {
+    display: block;
+}
+
+#menuclose {
+    display: none;
+}
+
 #todaydate {
+    color:#1b4965;
     background-color: #5fa8d3;
     align-self: flex-end;
     text-align: center;
@@ -45,6 +60,7 @@ main {
     align-items: stretch;
     align-content: space-around;
     justify-content: space-evenly;
+    padding-bottom: 50vh;
 }
 
 main div {
@@ -52,6 +68,7 @@ main div {
     min-width: 20%;
     padding: 1%;
     margin: 1%;
+    min-height: 25vh;
 }
 
 #hero {
@@ -65,8 +82,10 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
+    z-index: 90;
     padding: 1%;
     width: 98%;
+    max-height: 50vh;
     display: flex;
     flex-flow: row wrap;
     align-items: baseline;
@@ -77,8 +96,15 @@ footer {
     padding: 1%;
 }
 
+hr {
+    height: 1px;
+    background-color: #cae9ff;
+    border: none;
+}
+
 #smalltext {
     width: 100%;
+    text-align: center;
 }
 
 .sea-foam {
