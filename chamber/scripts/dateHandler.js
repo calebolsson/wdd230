@@ -7,3 +7,9 @@ const options = {
 };
 document.getElementById("todaydate").textContent =
   new Date().toLocaleDateString("en-uk", options);
+
+const marquee = document.getElementById("scrollbanner");
+const todayday = new Date().getDay().toString();
+if (todayday != "1" && todayday != "2") {
+  marquee.style.display = "none";
+}

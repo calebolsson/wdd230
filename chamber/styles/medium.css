@@ -1,5 +1,65 @@
-@media only screen and (max-width: 70em) {
+@media only screen and (device-width < 1024px) {
     header {
-        color: purple;
+        padding: 5%;
+        width: 90%;
+        max-height: 200px;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas:
+            "hero hero hero"
+            "news news news"
+            "spot spot spot"
+            "join join join"
+            "event event weather";
+        gap: 10px;
+        margin: 10px 10px 0px 10px;
+        justify-items: stretch;
+        padding-bottom: 55vh;
+    }
+
+    header h1 {
+        padding-left: 5%;
+        width: 250px;
+        flex-grow: 1;
+    }
+
+    #menu {
+        display: none;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        position: fixed;
+        padding: 100px;
+        gap: 25px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 98;
+        background-color: #1b4965;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menuicon {
+        border: none;
+        z-index: 99;
+        text-align: right;
+    }
+
+    #menuopen {
+        display: block;
+    }
+
+    #menuclose {
+        display: none;
+    }
+
+    .show_menu {
+        transition: 0s;
     }
 }

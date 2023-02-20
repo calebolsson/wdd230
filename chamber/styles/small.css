@@ -1,26 +1,47 @@
-@media only screen and (max-width: 32.5em) {
+@media only screen and (max-width: 500px) {
     body {
         margin-top: 220px;
     }
 
+    main {
+        display: grid;
+        grid-template-areas:
+            "hero" "event" "weather" "news" "spot" "join";
+        gap: 25px;
+        margin: 25px 25px 0px 25px;
+        justify-items: stretch;
+        padding-bottom: 60vh;
+    }
+
     header {
-        color: red;
-        position: fixed;
+        /* color: red; */
+        /* position: fixed; */
         padding: 5%;
         width: 90%;
         max-height: 200px;
         margin-top: -220px;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
     }
 
     header h1 {
         padding-left: 5%;
-        width: 250px;
+        max-width: 250px;
+        font-size: 1.3rem;
+    }
+
+    nav button {
+        margin: 5%;
     }
 
     #menu {
         display: none;
         grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         position: fixed;
+        padding: 25% 0;
+        gap: 5%;
         top: 0;
         bottom: 0;
         left: 0;
@@ -28,33 +49,15 @@
         z-index: 98;
         background-color: #1b4965;
         text-align: center;
-        /* height: 60%; */
-        /* margin: 200px 0; */
-    }
-
-    nav button {
-        border: none;
-        margin: 50% 0;
-    }
-
-    #socials {
-        display: none;
     }
 
     #menuicon {
+        background-color: #1b496566;
         border: none;
-        position: absolute;
+        position: fixed;
         z-index: 99;
-        top: 50%;
-        right: 5%;
-    }
-
-    #menuopen {
-        display: block;
-    }
-
-    #menuclose {
-        display: none;
+        top: 1%;
+        right: 4%;
     }
 
     .show_menu {

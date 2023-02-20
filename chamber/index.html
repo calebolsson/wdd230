@@ -18,8 +18,9 @@
 </head>
 
 <body>
+    <marquee id="scrollbanner" scrolldelay="100">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</marquee>
     <header>
-        <i id="logo" class="fa fa-university fa-5x"></i>
+        <i id="logo" class="fa fa-university fa-fw fa-5x"></i>
         <h1>Boerne Chamber of Commerce</h1>
         <nav id="menu">
             <button href="#">Discover</button>
@@ -31,20 +32,45 @@
             <i id="menuopen" class="fa fa-bars fa-2x" aria-hidden="true"></i>
             <i id="menuclose" class="fa fa-close fa-2x" aria-hidden="true"></i>
         </button>
-        <div id="socials">
-            <a href="https://facebook.com"><img src="images/facebook.png"></a>
-            <a href="https://instagram.com"><img src="images/instagram.png"></a>
-            <a href="https://twitter.com"><img src="images/twitter.png"></a>
-        </div>
         <span id="todaydate"></span>
     </header>
-    <main>
-        <div id="events">Event</div>
-        <div id="hero">Hero with site name and call to action</div>
-        <div id="weather">Weather</div>
-        <div id="join">Join form</div>
-        <div id="spotlight">Spotlights Flexbox</div>
-        <div id="news">News</div>
+    <main id="content">
+        <div id="events">
+            <h3>Event</h3>
+            <p>Come downtown and visit our booth at the Boerne Farmers Market! Saturdays 8am-1pm</p>
+        </div>
+        <div id="hero">
+            <img src="images/BoerneMural.jpeg" alt="Mural that says 'Greetings from old town Boerne">
+            <h2 class="imgtext">Welcome to the Boerne Chamber of Commerce website!</h2>
+        </div>
+        <div id="weather">
+            <h3>Weather</h3>
+            <p><i id="wstatus" class="fa fa-sun-o" aria-hidden="true"></i></p>
+            <p id="wtext">Sunny</p>
+            <p id="wtemp"></p>
+        </div>
+        <div id="join">
+            <h3>Join Us <i class="fa fa-arrow-right"></i></h3>
+        </div>
+        <div id="spotlight">
+            <h3>Community</h3>
+            <div class="tile">
+                <h4>Historic Main Street</h4>
+                <p>Preserve Boerne tradition.</p>
+            </div>
+            <div class="tile">
+                <h4>River and Reservoir</h4>
+                <p>Help us protect our water.</p>
+            </div>
+            <div class="tile">
+                <h4>Girl Scout Cookies</h4>
+                <p>Come get your favorites!</p>
+            </div>
+        </div>
+        <div id="news">
+            <h3>News</h3>
+            <p>Election cycle upcoming - read about the candidates here.</p>
+        </div>
     </main>
     <footer id="footer">
         <i class="fa fa-university fa-2x"></i>
@@ -55,6 +81,11 @@
         </div>
         <div id="contactinfo">
             <p>(000) 000-0000</p>
+            <div id="socials">
+                <a href="https://facebook.com"><img src="images/facebook.png"></a>
+                <a href="https://instagram.com"><img src="images/instagram.png"></a>
+                <a href="https://twitter.com"><img src="images/twitter.png"></a>
+            </div>
         </div>
         <div id="smalltext">
             <hr>
@@ -68,6 +99,7 @@
     <script src="scripts/lastModified.js"></script>
     <script src="scripts/dateHandler.js"></script>
     <script src="scripts/logoHandler.js"></script>
+    <script src="scripts/weatherDisplay.js"></script>
 </body>
 
 </html>
