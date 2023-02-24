@@ -18,7 +18,8 @@
 </head>
 
 <body>
-    <marquee id="scrollbanner" scrolldelay="100">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</marquee>
+    <marquee id="scrollbanner" scrolldelay="100">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+    </marquee>
     <header>
         <i id="logo" class="fa fa-university fa-fw fa-5x"></i>
         <h1>Boerne Chamber of Commerce</h1>
@@ -40,8 +41,14 @@
             <p>Come downtown and visit our booth at the Boerne Farmers Market! Saturdays 8am-1pm</p>
         </div>
         <div id="hero">
-            <img src="images/BoerneMural.jpeg" alt="Mural that says 'Greetings from old town Boerne">
-            <h2 class="imgtext">Welcome to the Boerne Chamber of Commerce website!</h2>
+            <picture>
+                <source srcset="images/wdd230-900x600-org.jpg" media="(max-width: 500px)" width="270" height="180">
+                <source srcset="images/wdd230-1200x800-org.jpg" media="(max-width: 1024px)" width="750" height="500">
+                <source srcset="images/wdd230-2400x1600-org.jpg" media="(min-width: 1024px)" width="630" height="420">
+                <img src="images/wdd230-6429x4286-org.jpg" alt="people planning">
+            </picture>
+            <!-- <img src="images/BoerneMural.jpeg" alt="Mural that says 'Greetings from old town Boerne"> -->
+            <!-- <h2 class="imgtext">Welcome to the Boerne Chamber of Commerce website!</h2> -->
         </div>
         <div id="weather">
             <h3>Weather</h3>

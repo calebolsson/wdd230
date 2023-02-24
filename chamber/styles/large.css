@@ -28,4 +28,9 @@
         max-width: 70%;
     }
 
+    #hero {
+        width: 630px;
+        height: 420px;
+    }
+
 }

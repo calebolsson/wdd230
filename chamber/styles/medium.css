@@ -62,4 +62,9 @@
     .show_menu {
         transition: 0s;
     }
+
+    #hero {
+        width: 750px;
+        height: 500px;
+    }
 }
