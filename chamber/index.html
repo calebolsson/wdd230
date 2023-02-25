@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
 </head>
 
 <body>
@@ -42,19 +43,30 @@
         </div>
         <div id="hero">
             <picture>
-                <source srcset="images/wdd230-900x600-org.jpg" media="(max-width: 500px)" width="270" height="180">
-                <source srcset="images/wdd230-1200x800-org.jpg" media="(max-width: 1024px)" width="750" height="500">
-                <source srcset="images/wdd230-2400x1600-org.jpg" media="(min-width: 1024px)" width="630" height="420">
+                <source srcset="images/wdd230-900x600-org.jpg" media="(max-width: 500px)">
+                <source srcset="images/wdd230-1200x800-org.jpg" media="(max-width: 1024px)">
+                <source srcset="images/wdd230-2400x1600-org.jpg" media="(min-width: 1024px)">
                 <img src="images/wdd230-6429x4286-org.jpg" alt="people planning">
             </picture>
             <!-- <img src="images/BoerneMural.jpeg" alt="Mural that says 'Greetings from old town Boerne"> -->
             <!-- <h2 class="imgtext">Welcome to the Boerne Chamber of Commerce website!</h2> -->
         </div>
         <div id="weather">
-            <h3>Weather</h3>
-            <p><i id="wstatus" class="fa fa-sun-o" aria-hidden="true"></i></p>
-            <p id="wtext">Sunny</p>
-            <p id="wtemp"></p>
+            <div id="weather_header">
+                <h3>Weather</h3>
+                <i id="weather_status" class="fa fa-sun-o" aria-hidden="true"></i>
+                <h3 id="weather_text">Sunny</h3>
+            </div>
+            <div class="weather_content title" class="subtitle">
+                <p>Temp</p>
+                <p>Wind</p>
+                <p>Chill</p>
+            </div>
+            <div class="weather_content">
+                <p id="air_temp"></p>
+                <p id="wind_speed"></p>
+                <p id="wind_chill"></p>
+            </div>
         </div>
         <div id="join">
             <h3>Join Us <i class="fa fa-arrow-right"></i></h3>

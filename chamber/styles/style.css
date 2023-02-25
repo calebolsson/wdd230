@@ -62,7 +62,9 @@ button {
 
 #todaydate {
     color: #1b4965;
-    background-color: #5fa8d3;
+    background-color: #bee9e8;
+    /* I don't like this background color but I needed
+    to get this banner to pass the contrast test */
     align-self: center;
     text-align: center;
     width: 100%;
@@ -78,15 +80,6 @@ main div {
     flex-flow: row wrap;
     justify-content: space-between;
 }
-
-main div h3 {
-    width: 100%;
-}
-
-/* img {
-    width: 100%;
-    height: 100%;
-} */
 
 .imgtext {
     background-color: #1b4965;
@@ -104,17 +97,55 @@ main div h3 {
 
 #events {
     grid-area: event;
-
 }
 
 #hero {
     grid-area: hero;
     position: relative;
     padding: 0;
+    width: 100%;
+}
+
+#hero img {
+    width: 100%;
 }
 
 #weather {
     grid-area: weather;
+    padding-bottom: 5%;
+}
+
+#weather_header {
+    width: 100%;
+    align-items: center;
+    height: 70px;
+}
+
+#weather_header h3 {
+    width: 40%;
+}
+
+#weather_status {
+    width: 20%;
+    text-align: center;
+}
+
+#weather_text {
+    text-align: right;
+    align-items: flex-start;
+}
+
+.weather_content {
+    width: 100%;
+    text-align: center;
+}
+
+.weather_content p {
+    margin-bottom: 0;
+}
+
+.title {
+    text-decoration-line: underline;
 }
 
 #join {
