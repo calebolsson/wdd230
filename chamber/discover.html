@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn more about the history, demographics, and destinations in the greater Boerne area!">
+    <link rel="icon" href="images/uni.ico">
+    <title>Discover Boerne</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/small.css" media="(max-width: 500px)">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 500px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
+
+</head>
+
+<body>
+    <marquee id="scrollbanner" scrolldelay="100">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+    </marquee>
+    <header>
+        <i id="logo" class="fa fa-university fa-fw fa-5x"></i>
+        <h1>Boerne Chamber of Commerce</h1>
+        <nav id="menu">
+            <button href="#">Discover</button>
+            <button href="#">Directory</button>
+            <button href="#">Join Us</button>
+            <button href="#">Contact Us</button>
+        </nav>
+        <button id="menuicon">
+            <i id="menuopen" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            <i id="menuclose" class="fa fa-close fa-2x" aria-hidden="true"></i>
+        </button>
+        <span id="todaydate"></span>
+    </header>
+    <main id="content">
+        <div id="discover">
+            <ul>
+                <h2>Demographics and Statistics:</h2>
+                <li>Population: ~ 20,000 people</li>
+                <li>Median Household Income: $80k</li>
+                <li>91% High School graduation rate</li>
+                <li>27% Minors, 17% Seniors</li>
+                <li>30% Hispanic or Latino</li>
+                <li>11% More than one race Reported</li>
+                <li>15% Speak languages other than English</li>
+            </ul>
+        </div>
+        <div id="gallery">
+            <picture>
+                <img alt="mural on main street" data-src="images/BoerneMural.jpeg" src="images/placeholder.png">
+            </picture>
+            <p class="gallerytext">Boerne Mural on Main Street</p>
+            <picture>
+                <img alt="boerne public library" data-src="images/publiclibrary.jpg" src="images/placeholder.png">
+            </picture>
+            <p class="gallerytext">Boerne Public Library</p>
+            <picture>
+                <img alt="restaurant on main street" data-src="images/restaurant.jpg" src="images/placeholder.png">
+            </picture>
+            <p class="gallerytext">Restaurant on Main Street</p>
+            <picture>
+                <img alt="statue of a man sitting on a bench" data-src="images/benchman.jpg"
+                    src="images/placeholder.png">
+            </picture>
+            <p class="gallerytext">Statue of a man sitting on a bench</p>
+            <picture>
+                <img alt="cibolo creek that runs alongside much of boenre" data-src="images/boernecreek.jpg"
+                    src="images/placeholder.png">
+            </picture>
+            <p class="gallerytext">Cibolo Creek</p>
+            <div id="displayVisit" class="gallerytext"></div>
+        </div>
+    </main>
+    <footer id="footer">
+        <i class="fa fa-university fa-2x"></i>
+        <div id="maplink">
+            <p>Boerne Chamber of Commerce</p>
+            <p>420 Smoky Way</p>
+            <p>Boerne, Texas 78006</p>
+        </div>
+        <div id="contactinfo">
+            <p>(000) 000-0000</p>
+            <div id="socials">
+                <a href="https://facebook.com"><img src="images/facebook.png"></a>
+                <a href="https://instagram.com"><img src="images/instagram.png"></a>
+                <a href="https://twitter.com"><img src="images/twitter.png"></a>
+            </div>
+        </div>
+        <div id="smalltext">
+            <hr>
+            <p>&copy;
+                <span id="currentyear"></span> Boerne Chamber | Caleb Olsson | WDD230 Project | Last Modified: <span
+                    id="lastmod"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/lastModified.js"></script>
+    <script src="scripts/dateHandler.js"></script>
+    <script src="scripts/logoHandler.js"></script>
+    <script src="scripts/weatherDisplay.js"></script>
+    <script src="scripts/lazyload.js"></script>
+</body>
+
+</html>

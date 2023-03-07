@@ -225,3 +225,38 @@ hr {
 .soft-blue {
     background-color: #5fa8d3;
 }
+
+/* DISCOVER PAGE */
+
+#discover {
+    grid-area: hero;
+    padding: 0 5% 1% 1%;
+    justify-self: center;
+}
+
+#discover h2 {
+    width: 100%;
+}
+
+#gallery {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    grid-area: news;
+    background-color: #cae9ff;
+}
+
+#gallery img {
+    max-width: 100%;
+}
+
+.gallerytext {
+    margin-top: 0;
+    margin-bottom: 5%;
+    text-align: center;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 5%;
+    background-color: #1b4965;
+    color: #cae9ff;
+}
