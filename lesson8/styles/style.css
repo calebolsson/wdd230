@@ -1,0 +1,49 @@
+:root {
+    --zebra: hsl(0, 0%, 93%, 1);
+}
+
+table {
+    margin: auto;
+    /* border: thin solid black; */
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+thead tr th:first-child {
+    background-color: black;
+}
+
+tr td:first-child {
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid gray;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 10px 20px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
+.fa-check {
+    color: #635994;
+}
+
+.fa-close {
+    color: #f92f60;
+}
