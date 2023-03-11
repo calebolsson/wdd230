@@ -260,3 +260,76 @@ hr {
     background-color: #1b4965;
     color: #cae9ff;
 }
+
+/* JOIN PAGE */
+
+form {
+    background-color: #1b4965;
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: #cae9ff;
+    grid-area: hero;
+}
+
+form fieldset {
+    margin: 1rem;
+    border: 1px solid #bee9e8;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px 20px 0 20px;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}
+
+form label.top {
+    display: block;
+    padding-bottom: 1rem;
+}
+
+form label.sbs {
+    display: block;
+    padding-top: .5rem;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+    background-color: #bee9e8;
+    color: #1b4965;
+    display: block;
+    min-height: 45px;
+    width: 100%;
+    max-width: 25rem;
+}
+
+form label.top textarea {
+    min-height: 60px;
+}
+
+form label input::placeholder {
+    color: #333;
+    font-style: italic;
+}
+
+form label input:invalid {
+    border-left: red solid 6px;
+}
+
+form label input:required:valid {
+    border-left: green solid 6px;
+}
+
+form input.submitBtn {
+    border: 10px solid #cae9ff;
+    background-color: #1b4965;
+    font-size: 3rem;
+    color: #cae9ff;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    margin: 10px 0;
+    width: 100%;
+}

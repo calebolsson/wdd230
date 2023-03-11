@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="The Boerne Chamber of Commerce was established to help our local business to flourish together as part of an inclusive and engaging community.">
+        content="Learn more about the history, demographics, and destinations in the greater Boerne area!">
     <link rel="icon" href="images/uni.ico">
-    <title>Boerne Chamber of Commerce</title>
+    <title>Discover Boerne</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -37,59 +37,51 @@
         <span id="todaydate"></span>
     </header>
     <main id="content">
-        <div id="events">
-            <h3>Event</h3>
-            <p>Come downtown and visit our booth at the Boerne Farmers Market! Saturdays 8am-1pm</p>
-        </div>
-        <div id="hero">
-            <!-- <picture>
-                <source srcset="images/wdd230-900x600-org.jpg" media="(max-width: 500px)">
-                <source srcset="images/wdd230-1200x800-org.jpg" media="(min-width: 500px) and (max-width: 1023px)">
-                <source srcset="images/wdd230-2400x1600-org.jpg" media="(min-width: 1024px)">
-                <img src="images/wdd230-6429x4286-org.jpg" alt="people planning">
-            </picture> -->
-            <img src="images/BoerneMural.jpeg" alt="Mural that says 'Greetings from old town Boerne">
-            <h2 class="imgtext">Welcome to the Boerne Chamber of Commerce website!</h2>
-        </div>
-        <div id="weather">
-            <div id="weather_header">
-                <h3>Weather</h3>
-                <i id="weather_status" class="fa fa-sun-o" aria-hidden="true"></i>
-                <h3 id="weather_text">Sunny</h3>
-            </div>
-            <div class="weather_content title" class="subtitle">
-                <p>Temp</p>
-                <p>Wind</p>
-                <p>Chill</p>
-            </div>
-            <div class="weather_content">
-                <p id="air_temp"></p>
-                <p id="wind_speed"></p>
-                <p id="wind_chill"></p>
-            </div>
-        </div>
-        <div id="join">
-            <h3>Join Us <i class="fa fa-arrow-right"></i></h3>
-        </div>
-        <div id="spotlight">
-            <h3>Community</h3>
-            <div class="tile">
-                <h4>Historic Main Street</h4>
-                <p>Preserve Boerne tradition.</p>
-            </div>
-            <div class="tile">
-                <h4>River and Reservoir</h4>
-                <p>Help us protect our water.</p>
-            </div>
-            <div class="tile">
-                <h4>Girl Scout Cookies</h4>
-                <p>Come get your favorites!</p>
-            </div>
-        </div>
-        <div id="news">
-            <h3>News</h3>
-            <p>Election cycle upcoming - read about the candidates here.</p>
-        </div>
+        <form id="joinform">
+            <h1>Join Us!</h1>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name<input type="text" name="fname" placeholder="John" required></label>
+                <label class="top">Last Name<input type="text" name="lname" placeholder="Doe" required></label>
+                <label class="top">Address<input type="text" name="streetaddress"
+                        placeholder="420 Trees of Boerne Street"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">Email <input type="text" name="email" placeholder="thebestemail@gmail.com"
+                        required></label>
+                <label class="top">Cell Phone <input type="tel" name="cellphone" placeholder="1235556789"
+                        required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label class="top">Business<input type="text" name="business" placeholder="Corporation Inc."
+                        title="Name of the company you work for" required></label>
+                <label class="top">Business Position<input type="text" name="businessPosition"
+                        placeholder="Senior Work Manager" pattern="[A-Za-z -]{7,}" title="Your job title"></label>
+                <label class="top">Business Description
+                    <textarea title="Briefly describe your business"></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Options</legend>
+                Opt-Out of Text/Email Updates?
+                <label class="sbs"><input type="radio" name="optout" value="no"> Stay Enrolled for updates</label>
+                <label class="sbs"><input type="radio" name="optout" value="yes"> Opt-Out of communication</label>
+                <br>
+                <label class="top">Membership Level
+                    <select name="membershipLevel">
+                        <option value="">Select Membership Plan</option>
+                        <option value="NP">Non-Profit</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+            </fieldset>
+            <input id="datetime" type="datetime" value="" hidden>
+            <input type="submit" value="Join the Community" class="submitBtn">
+        </form>
     </main>
     <footer id="footer">
         <i class="fa fa-university fa-2x"></i>
@@ -118,7 +110,6 @@
     <script src="scripts/lastModified.js"></script>
     <script src="scripts/dateHandler.js"></script>
     <script src="scripts/logoHandler.js"></script>
-    <script src="scripts/weatherDisplay.js"></script>
 </body>
 
 </html>
