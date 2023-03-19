@@ -19,6 +19,13 @@
         padding-bottom: 50vh;
     }
 
+    .joincontent {
+        grid-template-areas:
+            "hero hero spot spot"
+            "hero hero spot spot"
+            "event news news weather";
+    }
+
     #menuicon {
         display: none;
     }

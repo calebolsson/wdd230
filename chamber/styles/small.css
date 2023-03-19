@@ -13,6 +13,11 @@
         padding-bottom: 60vh;
     }
 
+    .joincontent {
+        grid-template-areas:
+            "hero" "event" "weather" "news" "spot" "join";
+    }
+
     header {
         /* color: red; */
         /* position: fixed; */

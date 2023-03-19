@@ -79,6 +79,7 @@ main div {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    border-radius: 10px;
 }
 
 .imgtext {
@@ -159,10 +160,33 @@ main div {
 
 .tile {
     border: 1px solid #62b6cb;
+    border-radius: 10px;
     width: 100%;
     margin: 1% 0;
     display: flex;
     flex-flow: column;
+}
+
+#memberships {
+    grid-area: spot;
+    flex-flow: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+
+#memberships div {
+    justify-content: flex-start;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+#memberships .tile {
+    display: block;
+}
+
+.turbosize {
+    display: inline;
+    font-size: 3em;
 }
 
 #news {

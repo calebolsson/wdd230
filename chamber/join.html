@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Learn more about the history, demographics, and destinations in the greater Boerne area!">
+    <meta name="description" content="Join the Boerne Chamber of Commerce to access special priveleges and perks!">
     <link rel="icon" href="images/uni.ico">
-    <title>Discover Boerne</title>
+    <title>Join Us</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -19,8 +18,7 @@
 </head>
 
 <body>
-    <marquee id="scrollbanner" scrolldelay="100">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
-    </marquee>
+    <div id="scrollbanner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     <header>
         <i id="logo" class="fa fa-university fa-fw fa-5x"></i>
         <h1>Boerne Chamber of Commerce</h1>
@@ -36,7 +34,7 @@
         </button>
         <span id="todaydate"></span>
     </header>
-    <main id="content">
+    <main id="content" class="joincontent">
         <form id="joinform" method="get" action="thanks.html">
             <h1>Join Us!</h1>
             <fieldset>
@@ -79,9 +77,47 @@
                     </select>
                 </label>
             </fieldset>
-            <input id="datetime" type="datetime" value="" hidden>
+            <input id="datetime" type="datetime-local" value="" hidden>
             <input type="submit" value="Join the Community" class="submitBtn">
         </form>
+        <div id="memberships">
+            <h3>Membership Plans</h3>
+            <div class="tile">
+                <h4>Non-Profit Membership</h4>
+                <p class="turbosize">$0</p>/month
+                <ul>
+                    <li>Invitations to member events</li>
+                    <li>Exlusive offers and promotions</li>
+                </ul>
+            </div>
+            <div class="tile">
+                <h4>Bronze Membership</h4>
+                <p class="turbosize">$5</p>/month
+                <ul>
+                    <li>Invitations to member events</li>
+                    <li>Basic training and initiation</li>
+                </ul>
+            </div>
+            <div class="tile">
+                <h4>Silver Membership</h4>
+                <p class="turbosize">$10</p>/month
+                <ul>
+                    <li>Invitations to member events</li>
+                    <li>Advanced training</li>
+                    <li>Initiation ceremony</li>
+                </ul>
+            </div>
+            <div class="tile">
+                <h4>Gold Membership</h4>
+                <p class="turbosize">$20</p>/month
+                <ul>
+                    <li>Invitations to member events</li>
+                    <li>Exlusive offers and promotions</li>
+                    <li>Individual mentor-led training</li>
+                    <li>Private initiation ceremony</li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer id="footer">
         <i class="fa fa-university fa-2x"></i>

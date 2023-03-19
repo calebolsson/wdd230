@@ -19,6 +19,14 @@
         padding-bottom: 55vh;
     }
 
+    .joincontent {
+        grid-template-areas:
+            "hero hero spot"
+            "news news news"
+            "join join join"
+            "event event weather";
+    }
+
     header h1 {
         padding-left: 5%;
         width: 250px;
