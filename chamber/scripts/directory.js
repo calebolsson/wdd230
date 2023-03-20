@@ -1,4 +1,5 @@
-const source = "https://calebolsson.github.io/wdd230/chamber/json/directory.json";
+const source =
+  "https://calebolsson.github.io/wdd230/chamber/json/directory.json";
 
 async function getData() {
   const response = await fetch(source);
@@ -18,12 +19,22 @@ function displayData(arraydata) {
     h2.textContent = `${item.name}`;
     p1.textContent = `${item.phone}`;
     p2.textContent = `${item.address}`;
+    console.log(item.name, item.phone, item.address);
     image.setAttribute("src", item.imageUrl);
     image.setAttribute("alt", `Logo for ${item.name}`);
     image.setAttribute("loading", "lazy");
     // image.setAttribute("width", "255");
     // image.setAttribute("height", "330");
-    card.append(h2, p1, p2, image);
+    if (item.member == "Gold Member") {
+      card.style.order = 0;
+    } else if (item.member == "Non-Profit Member") {
+      card.style.order = 1;
+    } else if (item.member == "Silver Member") {
+      card.style.order = 2;
+    } else {
+      card.style.order = 3;
+    }
+    card.append(h2, p1, image, p2);
     cards.appendChild(card);
   }); //★
 }

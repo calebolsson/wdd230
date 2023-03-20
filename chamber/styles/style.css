@@ -357,3 +357,34 @@ form input.submitBtn {
     margin: 10px 0;
     width: 100%;
 }
+
+/* DIRECTORY */
+
+.cards {
+    grid-area: hero;
+    background-color: #cae9ff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 100%;
+}
+
+.cards section {
+    background-color: #1b4965;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.cards section p {
+    max-width: 75%;
+}
+
+.cards section img {
+    max-width: 100%;
+    max-height: 200px;
+}
