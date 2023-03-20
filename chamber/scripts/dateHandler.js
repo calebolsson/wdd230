@@ -13,4 +13,3 @@ const todayday = new Date().getDay().toString();
 if (todayday != "1" && todayday != "2") {
   marquee.style.display = "none";
 }
-document.getElementById("datetime").value = new Date();
