@@ -26,6 +26,14 @@ header {
     padding: 1%;
 }
 
+a[href="index.html"],
+a[href="index.html"]:link,
+a[href="index.html"]:visited,
+a[href="index.html"]:hover,
+a[href="index.html"]:active {
+    color: #cae9ff;
+}
+
 #logo {
     padding-left: 5px;
 }
