@@ -7,7 +7,8 @@ body {
     position: relative;
 }
 
-marquee, #scrollbanner {
+marquee,
+#scrollbanner {
     position: absolute;
     color: #cae9ff;
     text-align: center;
@@ -36,7 +37,8 @@ nav {
     flex: 1;
 }
 
-button {
+button,
+#menu a {
     color: #cae9ff;
     background-color: #1b4965;
     transition-duration: 0.4s;
@@ -74,7 +76,8 @@ button {
     margin: 1%;
 }
 
-main div {
+main div,
+main a {
     background-color: #1b4965;
     color: #cae9ff;
     padding: 0 5%;
@@ -153,6 +156,12 @@ main div {
 
 #join {
     grid-area: join;
+    font-size: x-large;
+    background-color: #eebd4d;
+    color: #1b4965;
+    /* max-width: fit-content; */
+    border-radius: 50%;
+    justify-self: center;
 }
 
 #spotlight {

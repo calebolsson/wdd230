@@ -21,7 +21,7 @@
 <body>
     <div id="scrollbanner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     <header>
-        <i id="logo" class="fa fa-university fa-fw fa-5x"></i>
+        <a href="chamber"><i id="logo" class="fa fa-university fa-fw fa-5x"></i></a>
         <h1>Boerne Chamber of Commerce</h1>
         <nav id="menu">
             <button onclick="window.location.href='/wdd230/chamber/discover.html';">Discover</button>
@@ -55,7 +55,7 @@
                 <h3>Weather</h3>
                 <!-- <i id="weather_status" class="fa fa-sun-o" aria-hidden="true"></i> -->
                 <img id="weather_status" src="" alt="">
-                <h3 id="weather_text">Sunny</h3>
+                <h3 id="weather_text"></h3>
             </div>
             <div class="weather_content title" class="subtitle">
                 <p>Temp</p>
@@ -68,9 +68,9 @@
                 <p id="wind_chill"></p>
             </div>
         </div>
-        <div id="join">
+        <a id="join" href="join.html">
             <h3>Join Us <i class="fa fa-arrow-right"></i></h3>
-        </div>
+        </a>
         <div id="spotlight">
             <h3>Community</h3>
             <div class="tile">
@@ -109,7 +109,7 @@
         <div id="smalltext">
             <hr>
             <p>&copy;
-                <span id="currentyear"></span> Boerne Chamber | Caleb Olsson | WDD230 Project | Weather data from OpenWeatherMap | Last Modified: <span
+                <span id="currentyear"></span> Boerne Chamber | Caleb Olsson | WDD230 Project | Weather data from OpenWeatherMap <br> Last Modified: <span
                     id="lastmod"></span>
             </p>
         </div>
@@ -118,7 +118,7 @@
     <script src="scripts/lastModified.js"></script>
     <script src="scripts/dateHandler.js"></script>
     <script src="scripts/logoHandler.js"></script>
-    <script src="scripts/weatherDisplay.js"></script>
+    <!-- <script src="scripts/weatherDisplay.js"></script> -->
     <script src="scripts/weatherapi.js"></script>
 </body>
 
