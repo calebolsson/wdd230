@@ -36,8 +36,7 @@ let lastVisit = window.localStorage.getItem("lastVisit");
 if (lastVisit == null) {
   displayVisit.textContent = "Welcome! This is your first visit!";
 } else {
-  displayVisit.textContent =
-    `Welcome! It has been ${0} days since your last visit`;
+  displayVisit.textContent = `Welcome! It has been ${0} days since your last visit`;
 }
 
-window.localStorage.setItem("lastVisit");
+window.localStorage.setItem("lastVisit", thisVisit);
