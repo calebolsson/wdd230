@@ -21,7 +21,7 @@ function displayData(arraydata) {
     image.setAttribute("src", item.imageUrl);
     image.setAttribute("alt", `Logo for ${item.name}`);
     image.setAttribute("loading", "lazy");
-    card.append(h2, p1, image);
+    card.append(image, h2, p1);
     cards.appendChild(card);
   }); //★
 }
