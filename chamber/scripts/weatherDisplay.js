@@ -1,4 +1,5 @@
 //updates the weather information
+
 const weather = document.getElementById("weather");
 const wstatus = document.getElementById("weather_status");
 const wtext = document.getElementById("weather_text");
