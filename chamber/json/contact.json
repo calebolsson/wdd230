@@ -3,33 +3,39 @@
   "results": [
     {
       "name": "Batman",
-      "phone": "",
-      "imageUrl": ""
+      "phone": "(225) 522-8626",
+      "hidden": "callbatman",
+      "imageUrl": "https://calebolsson.github.io/wdd230/chamber/images/batman.png"
     },
     {
       "name": "Superman",
-      "phone": "",
-      "imageUrl": ""
+      "phone": "(787) 377-4663",
+      "hidden": "superphone",
+      "imageUrl": "https://calebolsson.github.io/wdd230/chamber/images/superman.png"
     },
     {
       "name": "Wonder Woman",
-      "phone": "",
-      "imageUrl": ""
+      "phone": "(963) 379-6626",
+      "hidden": "wnderwoman",
+      "imageUrl": "https://calebolsson.github.io/wdd230/chamber/images/wonderwoman.png"
     },
     {
       "name": "Martian Manhunter",
-      "phone": "",
-      "imageUrl": ""
+      "phone": "(626) 048-6837",
+      "hidden": "man hunter",
+      "imageUrl": "https://calebolsson.github.io/wdd230/chamber/images/martianmanhunter.png"
     },
     {
       "name": "Flash",
-      "phone": "",
-      "imageUrl": ""
+      "phone": "(327) 837-8626",
+      "hidden": "fastestman",
+      "imageUrl": "https://calebolsson.github.io/wdd230/chamber/images/flash.png"
     },
     {
       "name": "Green Lantern",
-      "phone": "",
-      "imageUrl": ""
+      "phone": "(442) 839-3569",
+      "hidden": "ihateyelow",
+      "imageUrl": "https://calebolsson.github.io/wdd230/chamber/images/greenlantern.png"
     }
   ]
 }
