@@ -7,9 +7,11 @@ body {
     position: relative;
 }
 
-marquee {
+marquee, #scrollbanner {
     position: absolute;
     color: #cae9ff;
+    text-align: center;
+    width: 100%;
 }
 
 header {
