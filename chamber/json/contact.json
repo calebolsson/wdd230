@@ -1,0 +1,35 @@
+{
+  "count": 9,
+  "results": [
+    {
+      "name": "Batman",
+      "phone": "",
+      "imageUrl": ""
+    },
+    {
+      "name": "Superman",
+      "phone": "",
+      "imageUrl": ""
+    },
+    {
+      "name": "Wonder Woman",
+      "phone": "",
+      "imageUrl": ""
+    },
+    {
+      "name": "Martian Manhunter",
+      "phone": "",
+      "imageUrl": ""
+    },
+    {
+      "name": "Flash",
+      "phone": "",
+      "imageUrl": ""
+    },
+    {
+      "name": "Green Lantern",
+      "phone": "",
+      "imageUrl": ""
+    }
+  ]
+}
