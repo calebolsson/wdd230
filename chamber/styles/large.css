@@ -35,4 +35,8 @@
         max-width: 70%;
     }
 
+    #menu a {
+        display: block;
+    }
+
 }
