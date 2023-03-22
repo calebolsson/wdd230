@@ -95,6 +95,7 @@ button {
     background-color: #bee9e8;
     /* I don't like this background color but I needed
     to get this banner to pass the contrast test */
+    border-radius: 20px;
     align-self: center;
     text-align: center;
     width: 100%;
@@ -129,6 +130,11 @@ main a {
 
 #events {
     grid-area: event;
+    padding-bottom: 5%;
+}
+
+#events h3, #spotlight h3 {
+    margin-bottom: 0;
 }
 
 #hero {
@@ -136,10 +142,15 @@ main a {
     position: relative;
     padding: 0;
     width: 100%;
+    overflow: hidden;
 }
 
 #hero img {
     width: 100%;
+}
+
+#hero h2 {
+    border-radius: 0 20px 0 0;
 }
 
 #weather {
@@ -185,9 +196,12 @@ main a {
     font-size: x-large;
     background-color: #eebd4d;
     color: #1b4965;
-    /* max-width: fit-content; */
-    border-radius: 50%;
+    border-radius: 40%;
     justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
 }
 
 #spotlight {
@@ -202,6 +216,51 @@ main a {
     margin: 1% 0;
     display: flex;
     flex-flow: column;
+    justify-content: space-between;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.tile h4, .tile p {
+    background-color: #1b4965aa;
+    padding: 5%;
+    width: fit-content;
+    margin-left: 0;
+}
+
+.tile h4 {
+    margin-top: 0;
+    border-radius: 0 0 20px 0;
+}
+
+.tile p {
+    margin-bottom: 0;
+    border-radius: 0 20px 0 0;
+}
+
+#boernemainsquare {
+    background: url("../images/benchman.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#historicmainstreet {
+    /* background: url("../images/benchman.jpg"); */
+    background: url(../images/restaurant.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#riverandreservoir {
+    background: url("../images/boernecreek.jpg");
+    background-position: right bottom;
+    background-size: cover;
+}
+
+#youthprograms {
+    background: url("../images/publiclibrary.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 #memberships {
@@ -291,12 +350,17 @@ hr {
 
 #discover {
     grid-area: hero;
-    padding: 0 5% 1% 1%;
+    padding: 3% 5% 1% 3%;
     justify-self: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#discover h2 {
+#discover strong {
     width: 100%;
+    text-align: center;
 }
 
 #gallery {
