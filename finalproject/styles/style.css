@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Rubik:wght@300&display=swap');
+
+:root {
+    --mantis: #7AC74F;
+    --pistachio: #A1CF6B;
+    --straw: #D5D887;
+    --citron: #E0C879;
+    --bittersweet: #E87461;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+a,
+p,
+div,
+section {
+    font-family: 'Rubik', sans-serif;
+}
+
+header,
+footer {
+    background-color: var(--mantis);
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+header {
+    padding: 3%;
+    margin: 0;
+    top: 0;
+}
+
+footer {
+    padding: 3%;
+    margin: 0;
+    bottom: 0;
+}
