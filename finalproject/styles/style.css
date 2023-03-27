@@ -152,17 +152,17 @@ strong {
 
 .tile {
     height: 50vh;
-    /* width: 100%; */
+    max-width: 100%;
 }
 
 .card,
 .add {
-    height: 80%;
+    height: 40vmin;
     width: 30vmin;
     margin-left: 3%;
     background-color: var(--straw);
-    overflow-y: scroll;
-    overflow-wrap: break-word;
+    /* overflow-y: scroll; */
+    /* overflow-wrap: break-word; */
     padding: .5%;
 }
 
@@ -192,12 +192,38 @@ strong {
 #mydrinks {
     grid-column: 1 / span 4;
     background-color: var(--mantis);
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-x: auto;
     display: flex;
     flex-flow: row;
-    /* justify-content: flex-start; */
-    align-items: center;
+    white-space: nowrap;
+}
+
+.box {
+    max-width: 100%;
+    margin: auto;
+}
+
+#container {
+    max-width: 500px;
+    margin: auto;
+}
+
+#flex-container {
+    grid-column: 1 / span 4;
+    background-color: var(--mantis);
+    display: flex;
+    flex-flow: row nowrap;
+    white-space: nowrap;
+    /* ^^^ apparently this is the make or break */
+    overflow-x: auto;
+}
+
+#flex-container .card:first-child {
+    margin-left: auto;
+}
+
+#flex-container .card:last-child {
+    margin-right: auto;
 }
 
 #mydrinks::-webkit-scrollbar {
