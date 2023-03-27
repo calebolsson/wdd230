@@ -152,18 +152,19 @@ strong {
 
 .tile {
     height: 50vh;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .card,
 .add {
     height: 40vmin;
-    width: 30vmin;
+    flex: 0 0 30vmin;
     margin-left: 3%;
     background-color: var(--straw);
-    /* overflow-y: scroll; */
-    /* overflow-wrap: break-word; */
+    overflow-y: auto;
+    overflow-wrap: break-word;
     padding: .5%;
+    flex-grow: 1;
 }
 
 .card::-webkit-scrollbar,
@@ -175,6 +176,7 @@ strong {
     text-align: center;
     font-size: 2em;
     margin-bottom: 0;
+    white-space: normal;
 }
 
 .add {
@@ -182,6 +184,7 @@ strong {
     /* ^^^ straw but with transparency*/
     justify-content: center;
     align-items: center;
+    margin-right: 3%;
 }
 
 .place {
@@ -196,9 +199,12 @@ strong {
     display: flex;
     flex-flow: row;
     white-space: nowrap;
+    /* ^^^ apparently this is the make or break */
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.box {
+/* .box {
     max-width: 100%;
     margin: auto;
 }
@@ -214,7 +220,6 @@ strong {
     display: flex;
     flex-flow: row nowrap;
     white-space: nowrap;
-    /* ^^^ apparently this is the make or break */
     overflow-x: auto;
 }
 
@@ -224,7 +229,7 @@ strong {
 
 #flex-container .card:last-child {
     margin-right: auto;
-}
+} */
 
 #mydrinks::-webkit-scrollbar {
     display: none;
