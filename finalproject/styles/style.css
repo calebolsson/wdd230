@@ -10,6 +10,7 @@
 
 body {
     margin: 0;
+    background-color: var(--citron);
 }
 
 body::-webkit-scrollbar {
@@ -28,6 +29,7 @@ h4 {
 h1 {
     font-size: 3em;
     display: inline;
+    margin: 0.5em 0 0.5em 0;
 }
 
 a,
@@ -41,11 +43,14 @@ section {
 a {
     text-decoration: none;
     font-size: 1.5em;
+}
+
+header a {
     padding: 1.5%;
 }
 
-a:hover,
-a:focus {
+header a:hover,
+header a:focus {
     color: white;
     background-color: var(--bittersweet);
     border-radius: 20px 0 20px 0;
@@ -59,6 +64,7 @@ footer {
 }
 
 header {
+    height: 15vh;
     padding: 0% 2%;
     margin: 0;
     top: 0;
@@ -69,7 +75,7 @@ header {
 
 footer {
     padding: 3%;
-    margin: 0;
+    margin-top: 1%;
     bottom: 0;
     width: 94%;
 }
@@ -96,7 +102,7 @@ nav {
     background: url("../images/hero.jpg");
     background-size: cover;
     text-align: center;
-    height: 75vh;
+    height: 85vh;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -115,6 +121,8 @@ strong {
 }
 
 #customize {
+    font-weight: bold;
+    padding: 2%;
     border-radius: 20px 0 20px 0;
     background-color: var(--mantis);
 }
@@ -122,5 +130,78 @@ strong {
 #customize:hover,
 #customize:focus {
     color: black;
-    border: 10px solid var(--citron);
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+#widgets {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 5vh;
+    gap: 5vh;
+}
+
+.tile,
+.card,
+.add {
+    /* border: 1px solid var(--bittersweet); */
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+}
+
+.tile {
+    height: 100%;
+    width: 100%;
+}
+
+.card,
+.add {
+    height: 80%;
+    min-width: 20%;
+    margin-left: 3%;
+    background-color: var(--straw);
+}
+
+.add {
+    background-color: #D5D88799;
+    /* ^^^ straw but with transparency*/
+    justify-content: center;
+    align-items: center;
+}
+
+.place {
+    grid-column: span 3;
+}
+
+#mydrinks {
+    grid-column: 1 / span 4;
+    background-color: var(--mantis);
+    overflow-x: scroll;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#mydrinks::-webkit-scrollbar {
+    display: none;
+}
+
+#weather {
+    background-color: skyblue;
+    grid-column: span 2;
+}
+
+#carlsbad {
+    background: url(../images/carlsbad-1024-684.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: center bottom;
+}
+
+#california {
+    background: url(../images/california.jpg);
+    background-size: cover;
+    background-position: center top -50px;
 }
