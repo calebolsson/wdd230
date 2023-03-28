@@ -45,6 +45,11 @@ a {
     font-size: 1.5em;
 }
 
+a:hover,
+a:focus {
+    transform: scale(1.05);
+}
+
 header a {
     padding: 1.5%;
 }
@@ -151,20 +156,21 @@ strong {
 }
 
 .tile {
-    height: 50vh;
+    height: 40vh;
     /* max-width: 100%; */
 }
 
 .card,
 .add {
-    height: 40vmin;
+    height: 33vmin;
     flex: 0 0 30vmin;
-    margin-left: 3%;
+    margin-left: 3vmin;
     background-color: var(--straw);
     overflow-y: auto;
-    overflow-wrap: break-word;
+    overflow-x: hidden;
+    /* overflow-wrap: break-word; */
     padding: .5%;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 .card::-webkit-scrollbar,
@@ -184,52 +190,19 @@ strong {
     /* ^^^ straw but with transparency*/
     justify-content: center;
     align-items: center;
-    margin-right: 3%;
-}
-
-.place {
-    height: 40vh;
-    grid-column: span 3;
+    margin-right: 3vmin;
 }
 
 #mydrinks {
     grid-column: 1 / span 4;
     background-color: var(--mantis);
     overflow-x: auto;
-    display: flex;
     flex-flow: row;
     white-space: nowrap;
     /* ^^^ apparently this is the make or break */
     justify-content: flex-start;
     align-items: center;
 }
-
-/* .box {
-    max-width: 100%;
-    margin: auto;
-}
-
-#container {
-    max-width: 500px;
-    margin: auto;
-}
-
-#flex-container {
-    grid-column: 1 / span 4;
-    background-color: var(--mantis);
-    display: flex;
-    flex-flow: row nowrap;
-    white-space: nowrap;
-    overflow-x: auto;
-}
-
-#flex-container .card:first-child {
-    margin-left: auto;
-}
-
-#flex-container .card:last-child {
-    margin-right: auto;
-} */
 
 #mydrinks::-webkit-scrollbar {
     display: none;
@@ -238,6 +211,24 @@ strong {
 #weather {
     background-color: skyblue;
     grid-column: span 2;
+}
+
+.place {
+    color: white;
+    height: 40vh;
+    grid-column: span 3;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    border-radius: 20px;
+}
+
+.place p {
+    font-weight: bold;
+    color: inherit;
+    background-color: inherit;
+    text-shadow: black 3px 3px 3px;
+    transition: all 0.5s ease-out;
 }
 
 #carlsbad {
