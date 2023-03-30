@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bountiful Foods</title>
     <link rel="icon" href="images/icon.png">
-    <meta name="description"
-        content="The smoothie professionals of southern California. Come custom-build your own smoothie with our quality ingredients, or take notes as our smoothie engineers design you a drink to match your diet and taste.">
+    <meta name="description" content="The smoothie professionals of southern California. Come custom-build your own smoothie with our quality ingredients, or take notes as our smoothie engineers design you a drink to match your diet and taste.">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/small.css" media="(max-width: 500px)">
@@ -22,11 +21,11 @@
         <h1>Bountiful Foods</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="fresh.html">Make a drink</a>
+            <a href="fresh.html#custom-drink">Make a drink</a>
             <a href="about.html">About Us</a>
         </nav>
         <div id="loginicons">
-            <a href="#"><i class="fa fa-user-circle"> Login</i></a> |
+            <a href="account.html"><i class="fa fa-user-circle"> Login</i></a> |
             <a href="https://facebook.com"><i class="fa fa-facebook-square"></i></a>
             <a href="https://pinterest.com"><i class="fa fa-pinterest-square"></i></a>
             <a href="https://twitter.com"><i class="fa fa-twitter-square"></i></a>
@@ -35,7 +34,7 @@
     <main>
         <div id="hero">
             <h2><strong>QUALITY</strong><br>DRINKS MADE BY PROFESSIONALS</h2>
-            <a id="customize" href="#">CUSTOMIZE</a>
+            <a id="customize" href="fresh.html">CUSTOMIZE</a>
         </div>
         <div id="widgets">
             <div id="mydrinks" class="tile">
@@ -79,12 +78,18 @@
                     <p>New Drink</p>
                 </a>
             </div>
-            <div id="weather" class="tile"></div>
-            <a id="carlsbad" class="tile place" href="#">
-                <p>CARLSBAD</p>
+            <div id="weather" class="tile">
+                OpenWeatherMap APIs (weather, forecast/daily) and include:
+                1. the current temperature,
+                2. the condition description,
+                3. the humidity, and
+                4. a three(3) day temperature forecast
+            </div>
+            <a id="carlsbad" class="tile place" href="about.html#aboutcarl">
+                <p class="shadow">CARLSBAD</p>
             </a>
-            <a id="california" class="tile place" href="#">
-                <p>CALIFORNIA</p>
+            <a id="california" class="tile place" href="about.html#aboutcali">
+                <p class="shadow">CALIFORNIA</p>
             </a>
         </div>
     </main>

@@ -21,18 +21,66 @@
         <h1>Bountiful Foods</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="fresh.html">Make a drink</a>
+            <a href="fresh.html#custom-drink">Make a drink</a>
             <a href="about.html">About Us</a>
         </nav>
         <div id="loginicons">
-            <a href="#"><i class="fa fa-user-circle"> Login</i></a> |
+            <a href="account.html"><i class="fa fa-user-circle"> Login</i></a> |
             <a href="https://facebook.com"><i class="fa fa-facebook-square"></i></a>
             <a href="https://pinterest.com"><i class="fa fa-pinterest-square"></i></a>
             <a href="https://twitter.com"><i class="fa fa-twitter-square"></i></a>
         </div>
     </header>
-    <main>
-
+    <main id="custom-drink">
+        <div id="base-box">
+            <h2>Choose your drink base:<p id="selected">[ select ]</p>
+            </h2>
+            <div id="selection">
+                <img src="images/selection-800-667.png" width="600" height="500">
+                <div class="select raspberry"><!--raspberry--></div>
+                <div class="select cherry"><!--cherry--></div>
+                <div class="select persimmon"><!--persimmon--></div>
+                <div class="select orange"><!--orange--></div>
+                <div class="select lemon"><!--lemon--></div>
+                <div class="select pear"><!--pear--></div>
+                <div class="select kiwi"><!--kiwi--></div>
+                <div class="select lime"><!--lime--></div>
+                <div class="select mango"><!--mango--></div>
+                <div class="select grapes"><!--grapes--></div>
+            </div>
+        </div>
+        <form id="drink-designer" method="get" action="thanks.html">
+            <h2>Custom Drink Designer</h2>
+            <fieldset>
+                <label>Drink Name<input name="drinkname" type="text" placeholder="My Custom Drink" required></label>
+                <label>Base Mixture<select name="drinkbase" type="text" required>
+                        <option>------ Drink Base ------</option>
+                        <option>raspberry</option>
+                        <option>cherry</option>
+                        <option>persimmon</option>
+                        <option>orange</option>
+                        <option>lemon</option>
+                        <option>pear</option>
+                        <option>kiwi</option>
+                        <option>lime</option>
+                        <option>mango</option>
+                        <option>grapes</option>
+                    </select></label>
+                <label>Add Ingredient<select name="ingredient1" type="text" required>
+                        <option>----- Ingredient 1 -----</option>
+                    </select></label>
+                <label>Add Ingredient<select name="ingredient2" type="text" required>
+                        <option>----- Ingredient 2 -----</option>
+                    </select></label>
+                <label>Special Instructions:<textarea></textarea></label>
+            </fieldset>
+            <input id="datetime" type="datetime-local" value="" hidden>
+            <input type="submit" value="SAVE YOUR DRINK" class="submit">
+        </form>
+        <div class="mask">
+            <p>Please make an account to unlock this feature</p>
+            <a href="account.html">MAKE AN ACCOUNT</a>
+        </div>
     </main>
     <footer>
         <div>

@@ -21,18 +21,32 @@
         <h1>Bountiful Foods</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="fresh.html">Make a drink</a>
+            <a href="fresh.html#custom-drink">Make a drink</a>
             <a href="about.html">About Us</a>
         </nav>
         <div id="loginicons">
-            <a href="#"><i class="fa fa-user-circle"> Login</i></a> |
+            <a href="account.html"><i class="fa fa-user-circle"> Login</i></a> |
             <a href="https://facebook.com"><i class="fa fa-facebook-square"></i></a>
             <a href="https://pinterest.com"><i class="fa fa-pinterest-square"></i></a>
             <a href="https://twitter.com"><i class="fa fa-twitter-square"></i></a>
         </div>
     </header>
-    <main>
-
+    <main id="account-main">
+        <form id="accountform" method="get" action="thanks.html">
+            <fieldset>
+                <legend>Account Information</legend>
+                <label>First Name<input name="fname" type="text" placeholder="Gordon" required></label>
+                <label>Last Name<input name="lname" type="text" placeholder="Ramsay" required></label>
+                <label>Email <input name="email" type="text" placeholder="yeschef@gmail.com" required></label>
+                <label>Phone <input name="cellphone" type="tel" placeholder="5058111966" required></label>
+            </fieldset>
+            <input id="datetime" type="datetime-local" value="" hidden>
+            <input type="submit" value="CREATE YOUR ACCOUNT" class="submit shadow">
+        </form>
+        <div class="frame">
+            <!-- width="500" height="333" -->
+            <img src="images/fruit-and-drinks.png">
+        </div>
     </main>
     <footer>
         <div>
