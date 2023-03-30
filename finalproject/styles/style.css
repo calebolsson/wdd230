@@ -445,7 +445,8 @@ fieldset {
 }
 
 #about-main .tile {
-    font-size: 1.5em;
+    font-size: 1.4em;
+    padding: 0 5%;
 }
 
 #about-main .tile h2 {
@@ -456,6 +457,17 @@ fieldset {
 iframe {
     grid-column: 2/3;
     grid-row: span 2;
+}
+
+#contactus {
+    grid-column: 1/span 2;
+    text-align: center;
+}
+
+#contactus div {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
 }
 
 /* ~ ACCOUNT PAGE */
