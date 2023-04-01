@@ -37,42 +37,42 @@
             </h2>
             <div id="selection">
                 <img src="images/selection-800-667.png" width="600" height="500">
-                <div class="select raspberry"><!--raspberry--></div>
-                <div class="select cherry"><!--cherry--></div>
-                <div class="select persimmon"><!--persimmon--></div>
-                <div class="select orange"><!--orange--></div>
-                <div class="select lemon"><!--lemon--></div>
-                <div class="select pear"><!--pear--></div>
-                <div class="select kiwi"><!--kiwi--></div>
-                <div class="select lime"><!--lime--></div>
-                <div class="select mango"><!--mango--></div>
-                <div class="select blackberry"><!--blackberry--></div>
+                <div id="raspberry" class="select raspberry_clear"><!--raspberry--></div>
+                <div id="cherry" class="select cherry_clear"><!--cherry--></div>
+                <div id="persimmon" class="select persimmon_clear"><!--persimmon--></div>
+                <div id="orange" class="select orange_clear"><!--orange--></div>
+                <div id="lemon" class="select lemon_clear"><!--lemon--></div>
+                <div id="pear" class="select pear_clear"><!--pear--></div>
+                <div id="kiwi" class="select kiwi_clear"><!--kiwi--></div>
+                <div id="lime" class="select lime_clear"><!--lime--></div>
+                <div id="mango" class="select mango_clear"><!--mango--></div>
+                <div id="blackberry" class="select blackberry_clear"><!--blackberry--></div>
             </div>
         </div>
         <form id="drink-designer">
             <h2>Custom Drink Designer</h2>
-            <fieldset>
+            <fieldset id="drink-fieldset">
                 <label>Drink Name<input name="drinkname" type="text" placeholder="My Custom Drink" required></label>
-                <label>Base Mixture<select name="drinkbase" type="text" required>
-                        <option>------ Drink Base ------</option>
-                        <option>raspberry</option>
-                        <option>cherry</option>
-                        <option>persimmon</option>
-                        <option>orange</option>
-                        <option>lemon</option>
-                        <option>pear</option>
-                        <option>kiwi</option>
-                        <option>lime</option>
-                        <option>mango</option>
-                        <option>blackberry</option>
+                <label>Base Mixture<select name="drinkbase" id="insert-base" type="text" required>
+                        <option value="">------ Drink Base ------</option>
+                        <option value="raspberry">raspberry</option>
+                        <option value="cherry">cherry</option>
+                        <option value="persimmon">persimmon</option>
+                        <option value="orange">orange</option>
+                        <option value="lemon">lemon</option>
+                        <option value="pear">pear</option>
+                        <option value="kiwi">kiwi</option>
+                        <option value="lime">lime</option>
+                        <option value="mango">mango</option>
+                        <option value="blackberry">blackberry</option>
                     </select></label>
                 <label>Add Ingredient<select name="ingredient1" type="text" required>
-                        <option>----- Ingredient 1 -----</option>
+                        <option value="test">----- Ingredient 1 -----</option>
                     </select></label>
                 <label>Add Ingredient<select name="ingredient2" type="text" required>
-                        <option>----- Ingredient 2 -----</option>
+                        <option value="test">----- Ingredient 2 -----</option>
                     </select></label>
-                <label>Special Instructions:<textarea></textarea></label>
+                <label>Special Instructions:<textarea name="specialinstructions"></textarea></label>
             </fieldset>
             <input id="datetime" type="datetime-local" value="" hidden>
             <input type="submit" value="SAVE YOUR DRINK" class="submit">
