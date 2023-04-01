@@ -19,7 +19,7 @@
     --kiwi: #9acd32;
     --lime: #98fb98;
     --mango: #87cefa;
-    --grapes: #9370d8;
+    --blackberry: #9370d8;
     /* Clear fruit colors */
     --raspberry-clear: #dc143c55;
     --cherry-clear: #ff000055;
@@ -30,7 +30,7 @@
     --kiwi-clear: #9acd3255;
     --lime-clear: #98fb9855;
     --mango-clear: #87cefa55;
-    --grapes-clear: #9370d855;
+    --blackberry-clear: #9370d855;
 }
 
 body {
@@ -100,7 +100,6 @@ footer {
     left: 0;
     right: 0;
     padding: 0% 2%;
-    margin: 0;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -112,7 +111,6 @@ header {
 
 footer {
     bottom: 0;
-    margin-top: 1%;
     justify-content: space-between;
 }
 
@@ -137,7 +135,8 @@ nav {
 /* ~ MAIN PAGE */
 
 main {
-    min-height: 68vh;
+    min-height: 85vh;
+    /* height: fit-content; */
 }
 
 #hero {
@@ -300,6 +299,9 @@ fieldset {
 
 #base-box {
     min-width: 50vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -320,7 +322,7 @@ fieldset {
 }
 
 #drink-designer input[type=submit] {
-    /* font-family: 'Rubik', sans-serif; */
+    margin-top: 6vh;
     font-size: 2em;
     padding: 3.5%;
 }
@@ -372,9 +374,12 @@ fieldset {
 
 .mask {
     z-index: 99;
-    position: absolute;
-    width: 100vw;
-    height: 101.7%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    /* top: 15vh; */
+    /* min-height: 70vh; */
     background-color: #000000aa;
     display: flex;
     flex-flow: column;
@@ -390,9 +395,24 @@ fieldset {
 
 .mask a {
     border-radius: 50px;
-    padding: 2%;
+    padding: 15px;
     background-color: var(--mantis);
     border: 5px solid white;
+}
+
+.sbs {
+    width: 400px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.sbs a {
+    display: inline;
+}
+
+#alreadyloggedin a[id=logout] {
+    background-color: var(--bittersweet);
 }
 
 .raspberry:hover {
@@ -431,8 +451,8 @@ fieldset {
     background-color: var(--mango-clear);
 }
 
-.grapes:hover {
-    background-color: var(--grapes-clear);
+.blackberry:hover {
+    background-color: var(--blackberry-clear);
 }
 
 /* ~ ABOUT PAGE */
@@ -443,6 +463,7 @@ fieldset {
     place-items: center;
     gap: 20px;
     margin: 20px;
+    height: 90vh;
 }
 
 #about-main .tile {
@@ -474,18 +495,16 @@ iframe {
 /* ~ ACCOUNT PAGE */
 
 #account-main {
-    margin: 5vh;
     display: flex;
     flex-flow: column;
+    justify-content: center;
     align-items: center;
-    gap: 5vh;
 }
 
 .frame {
     width: 100%;
     position: absolute;
     bottom: 0;
-    margin-bottom: -15vh;
     z-index: -99;
     overflow: hidden;
 }
@@ -493,7 +512,7 @@ iframe {
 .frame img {
     width: 100%;
     position: relative;
-    margin-bottom: -24vh;
+    margin-bottom: -33vh;
 }
 
 #accountform {
@@ -505,8 +524,8 @@ form fieldset {
     display: flex;
     flex-flow: column;
     width: 300px;
-    padding: 5% 10%;
-    margin: 0 0;
+    padding: 5%;
+    margin: 1vw 0;
     align-items: center;
     border: 1px solid var(--bittersweet);
     background-color: #E0C87999;
@@ -554,7 +573,7 @@ form input[type=submit] {
     width: fit-content;
     font-size: 2.5em;
     font-weight: bold;
-    margin: 5%;
+    margin: 0 5%;
     padding: 5%;
     border-radius: 50px;
     border: 5px solid var(--bittersweet);

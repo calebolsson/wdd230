@@ -25,20 +25,21 @@
             <a href="about.html">About Us</a>
         </nav>
         <div id="loginicons">
-            <a href="account.html"><i class="fa fa-user-circle"> Login</i></a> |
+            <a href="account.html"><i class="fa fa-user-circle"> Account</i></a> |
             <a href="https://facebook.com"><i class="fa fa-facebook-square"></i></a>
             <a href="https://pinterest.com"><i class="fa fa-pinterest-square"></i></a>
             <a href="https://twitter.com"><i class="fa fa-twitter-square"></i></a>
         </div>
     </header>
     <main id="account-main">
-        <form id="accountform" method="get" action="thanks.html">
+        <form id="accountform" method="post" autocomplete="on">
             <fieldset>
                 <legend>Account Information</legend>
-                <label>First Name<input name="fname" type="text" placeholder="Gordon" required></label>
-                <label>Last Name<input name="lname" type="text" placeholder="Ramsay" required></label>
-                <label>Email <input name="email" type="text" placeholder="yeschef@gmail.com" required></label>
-                <label>Phone <input name="cellphone" type="tel" placeholder="5058111966" required></label>
+                <label>First Name<input id="fname" name="fname" type="text" placeholder="Gordon" required></label>
+                <label>Last Name<input id="lname" name="lname" type="text" placeholder="Ramsay" required></label>
+                <label>Email <input id="email" name="email" type="text" placeholder="yeschef@gmail.com"
+                        required></label>
+                <label>Phone <input id="phone" name="phone" type="tel" placeholder="5058111966" required></label>
             </fieldset>
             <input id="datetime" type="datetime-local" value="" hidden>
             <input type="submit" value="CREATE YOUR ACCOUNT" class="submit shadow">
@@ -48,6 +49,13 @@
             <img src="images/fruit-and-drinks.png">
         </div>
     </main>
+    <div id="alreadyloggedin" class="mask" style="display: none;">
+        <p>You are already logged in</p>
+        <div class="sbs">
+            <a id="back" onclick="history.back()">GO BACK</a>
+            <a id="logout" href="account.html">LOG OUT</a>
+        </div>
+    </div>
     <footer>
         <div>
             Caleb Olsson<br>
@@ -56,6 +64,7 @@
         </div>
         <div id="lastmod"></div>
     </footer>
+    <script src="scripts/account.js"></script>
     <script src="scripts/lastmod.js"></script>
 </body>
 

@@ -25,7 +25,7 @@
             <a href="about.html">About Us</a>
         </nav>
         <div id="loginicons">
-            <a href="account.html"><i class="fa fa-user-circle"> Login</i></a> |
+            <a href="account.html"><i class="fa fa-user-circle"> Account</i></a> |
             <a href="https://facebook.com"><i class="fa fa-facebook-square"></i></a>
             <a href="https://pinterest.com"><i class="fa fa-pinterest-square"></i></a>
             <a href="https://twitter.com"><i class="fa fa-twitter-square"></i></a>
@@ -46,10 +46,10 @@
                 <div class="select kiwi"><!--kiwi--></div>
                 <div class="select lime"><!--lime--></div>
                 <div class="select mango"><!--mango--></div>
-                <div class="select grapes"><!--grapes--></div>
+                <div class="select blackberry"><!--blackberry--></div>
             </div>
         </div>
-        <form id="drink-designer" method="get" action="thanks.html">
+        <form id="drink-designer">
             <h2>Custom Drink Designer</h2>
             <fieldset>
                 <label>Drink Name<input name="drinkname" type="text" placeholder="My Custom Drink" required></label>
@@ -64,7 +64,7 @@
                         <option>kiwi</option>
                         <option>lime</option>
                         <option>mango</option>
-                        <option>grapes</option>
+                        <option>blackberry</option>
                     </select></label>
                 <label>Add Ingredient<select name="ingredient1" type="text" required>
                         <option>----- Ingredient 1 -----</option>
@@ -77,11 +77,11 @@
             <input id="datetime" type="datetime-local" value="" hidden>
             <input type="submit" value="SAVE YOUR DRINK" class="submit">
         </form>
-        <div class="mask">
-            <p>Please make an account to unlock this feature</p>
-            <a href="account.html">MAKE AN ACCOUNT</a>
-        </div>
     </main>
+    <div id="freshchecklogin" class="mask">
+        <p>Please make an account to unlock this feature</p>
+        <a href="account.html">MAKE AN ACCOUNT</a>
+    </div>
     <footer>
         <div>
             Caleb Olsson<br>
@@ -90,6 +90,7 @@
         </div>
         <div id="lastmod"></div>
     </footer>
+    <script src="scripts/fresh.js"></script>
     <script src="scripts/lastmod.js"></script>
 </body>
 
