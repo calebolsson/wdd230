@@ -31,8 +31,8 @@
             <a href="https://twitter.com"><i class="fa fa-twitter-square"></i></a>
         </div>
     </header>
-    <main id="custom-drink">
-        <div id="base-box">
+    <main id="custom-drink" class="flex-h wrap">
+        <div class="base-box flex-v centered">
             <h2>Choose your drink base:<p id="selected">[ select ]</p>
             </h2>
             <div id="selection">
@@ -49,34 +49,68 @@
                 <div id="blackberry" class="select blackberry_clear"><!--blackberry--></div>
             </div>
         </div>
-        <form id="drink-designer">
-            <h2>Custom Drink Designer</h2>
-            <fieldset id="drink-fieldset">
-                <label>Drink Name<input name="drinkname" type="text" placeholder="My Custom Drink" required></label>
-                <label>Base Mixture<select name="drinkbase" id="insert-base" type="text" required>
-                        <option value="">------ Drink Base ------</option>
-                        <option value="raspberry">raspberry</option>
-                        <option value="cherry">cherry</option>
-                        <option value="persimmon">persimmon</option>
-                        <option value="orange">orange</option>
-                        <option value="lemon">lemon</option>
-                        <option value="pear">pear</option>
-                        <option value="kiwi">kiwi</option>
-                        <option value="lime">lime</option>
-                        <option value="mango">mango</option>
-                        <option value="blackberry">blackberry</option>
-                    </select></label>
-                <label>Add Ingredient<select name="ingredient1" type="text" required>
-                        <option value="test">----- Ingredient 1 -----</option>
-                    </select></label>
-                <label>Add Ingredient<select name="ingredient2" type="text" required>
-                        <option value="test">----- Ingredient 2 -----</option>
-                    </select></label>
-                <label>Special Instructions:<textarea name="specialinstructions"></textarea></label>
-            </fieldset>
-            <input id="datetime" type="datetime-local" value="" hidden>
-            <input type="submit" value="SAVE YOUR DRINK" class="submit">
-        </form>
+        <div class="base-box flex-v centered">
+            <form id="drink-designer" class="centered">
+                <h2>Custom Drink Designer</h2>
+                <fieldset id="drink-fieldset">
+                    <label>Drink Name<input name="drinkname" type="text" placeholder="My Custom Drink" required></label>
+                    <label>Base Mixture<select name="drinkbase" id="insert-base" type="text" required>
+                            <option value="">------ Drink Base ------</option>
+                            <option value="raspberry">raspberry</option>
+                            <option value="cherry">cherry</option>
+                            <option value="persimmon">persimmon</option>
+                            <option value="orange">orange</option>
+                            <option value="lemon">lemon</option>
+                            <option value="pear">pear</option>
+                            <option value="kiwi">kiwi</option>
+                            <option value="lime">lime</option>
+                            <option value="mango">mango</option>
+                            <option value="blackberry">blackberry</option>
+                        </select></label>
+                    <label>Add Ingredient<select name="ingredient1" type="text" required>
+                            <option value="">----- Ingredient 1 -----</option>
+                        </select></label>
+                    <label>Add Ingredient<select name="ingredient2" type="text" required>
+                            <option value="">----- Ingredient 2 -----</option>
+                        </select></label>
+                    <label>Special Instructions:<textarea name="specialinstructions"></textarea></label>
+                </fieldset>
+                <input id="datetime" type="datetime-local" value="" hidden>
+                <input type="submit" value="SAVE YOUR DRINK" class="submit">
+            </form>
+        </div>
+        <div id="drink-display" class="base-box flex-v">
+            <h3>Drink Name</h3>
+            <ul class="scroll-visible">
+                <li>Base</li>
+                <li>Ingredient</li>
+                <li>Ingredient</li>
+                <li>Special Instructions Lorem ipsum dolor sit amet</li>
+            </ul>
+            <div class="nutrition flex-h wrap">
+                <h4>Nutrition Facts</h4>
+                <hr style="border: 6px solid black">
+                <div class="big bold">Calories</div>
+                <div id="calories" class="big bold">##</div>
+                <hr style="border: 3px solid black">
+                <div class="bold">Total Fat</div>
+                <div id="fat">##</div>
+                <hr>
+                <div class="bold">Total Carbohydrates</div>
+                <div id="carbs">##</div>
+                <hr>
+                <div class="indent">Sugar</div>
+                <div id="sugar">##</div>
+                <hr>
+                <div class="bold">Protein</div>
+                <div id="protien">##</div>
+                <hr style="border: 6px solid black">
+            </div>
+            <p>Account: FirstName<br>
+                Email:<br>
+                Phone:<br>
+                Order date: ///////////</p>
+        </div>
     </main>
     <div id="freshchecklogin" class="mask">
         <p>Please make an account to unlock this feature</p>
