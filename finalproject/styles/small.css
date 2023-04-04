@@ -1,0 +1,42 @@
+#hero {
+    min-height: 50vh;
+    height: fit-content;
+}
+
+#hero h2 {
+    font-size: 1.5em;
+}
+
+nav {
+    width: 100%;
+    flex-direction: column;
+    min-height: 30vh;
+}
+
+header {
+    height: fit-content;
+}
+
+#loginicons {
+    /* display: none; */
+    position: static;
+    width: 100%;
+    text-align: center;
+    height: 5vh;
+}
+
+#menu {
+    display: block;
+    flex-grow: 1;
+    margin: auto;
+    max-width: fit-content;
+    text-align: center;
+}
+
+.menu-nav-mobile-off {
+    display: none;
+}
+
+.menu-nav-mobile-on {
+    display: flex;
+}

@@ -57,3 +57,18 @@ let theAddCard = document.createElement("template");
 theAddCard.innerHTML =
   '<a class="add" href="fresh.html#custom-drink"><i class="fa fa-plus-circle fa-3x"></i><p>New Drink</p></a>';
 drinkbox.append(theAddCard.content);
+
+// NOT DRINKS RELATED
+// Handles the menu on the main page
+
+const menu = document.getElementById("menu");
+const nav = document.getElementById("nav");
+function toggleMenu() {
+  if (nav.getAttribute("class") == "menu-nav-mobile-off") {
+    nav.setAttribute("class", "menu-nav-mobile-on");
+  } else {
+    nav.setAttribute("class", "menu-nav-mobile-off");
+  }
+}
+
+menu.addEventListener("click", toggleMenu);
