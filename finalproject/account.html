@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <img src="images/icon-700-488.png" width="75" height="52">
+        <img alt="Collection of fruit, piled around a pineapple" src="images/icon-700-488.png" width="75" height="52">
         <h1>Bountiful Foods</h1>
         <nav>
             <a href="index.html">Home</a>
@@ -37,8 +37,7 @@
                 <legend>Account Information</legend>
                 <label>First Name<input name="fname" type="text" placeholder="Gordon" required></label>
                 <label>Last Name<input name="lname" type="text" placeholder="Ramsay" required></label>
-                <label>Email <input name="email" type="email" placeholder="yeschef@gmail.com"
-                        required></label>
+                <label>Email <input name="email" type="email" placeholder="yeschef@gmail.com" required></label>
                 <label>Phone <input name="phone" type="tel" placeholder="5058111966" required></label>
             </fieldset>
             <input id="datetime" type="datetime-local" value="" hidden>
@@ -46,13 +45,14 @@
         </form>
         <div class="frame">
             <!-- width="500" height="333" -->
-            <img src="images/fruit-and-drinks.png">
+            <img alt="A collection of fruit surrounding a row of similarly colorful drinks"
+                src="images/fruit-and-drinks.png">
         </div>
     </main>
     <div id="alreadyloggedin" class="mask" style="display: none;">
         <p>You are already logged in</p>
         <div class="mask-buttons flex-h">
-            <a id="back" onclick="history.back()">GO BACK</a>
+            <a id="back" class="usepointer" onclick=history.back()>GO BACK</a>
             <a id="logout" href="account.html">LOG OUT</a>
         </div>
     </div>

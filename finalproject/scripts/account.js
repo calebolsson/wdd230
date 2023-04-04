@@ -1,4 +1,5 @@
 let accountStorage = localStorage.getItem("account");
+
 function getFormValue(inputName) {
   return document.getElementsByName(inputName).item(0).value;
 }
@@ -12,7 +13,7 @@ function register(this_event) {
     let phone = getFormValue("phone");
     console.log(fname, lname, email, phone);
     accountStorage = [fname, lname, email, phone];
-    localStorage.setItem("account", [fname, lname, email, phone]);
+    localStorage.setItem("account", JSON.stringify(accountStorage));
     console.log(accountStorage);
     window.location.href = "index.html";
     alert("Account creation sucessful");
@@ -25,7 +26,7 @@ const loginmask = document.getElementById("alreadyloggedin");
 function logout() {
   accountStorage = null;
   localStorage.removeItem("account");
-//   localStorage.clear();
+  localStorage.clear();
 }
 
 if (localStorage.getItem("account") != null) loginmask.style.display = "flex";

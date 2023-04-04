@@ -33,43 +33,43 @@
     --blackberry-clear: #9370d855;
 }
 
-.raspberry {
+.Raspberry {
     background-color: var(--raspberry);
 }
 
-.cherry {
+.Cherry {
     background-color: var(--cherry);
 }
 
-.persimmon {
+.Persimmon {
     background-color: var(--persimmon);
 }
 
-.orange {
+.Orange {
     background-color: var(--orange);
 }
 
-.lemon {
+.Lemon {
     background-color: var(--lemon);
 }
 
-.pear {
+.Pear {
     background-color: var(--pear);
 }
 
-.kiwi {
+.Kiwi {
     background-color: var(--kiwi);
 }
 
-.lime {
+.Lime {
     background-color: var(--lime);
 }
 
-.mango {
+.Mango {
     background-color: var(--mango);
 }
 
-.blackberry {
+.Blackberry {
     background-color: var(--blackberry);
 }
 
@@ -175,6 +175,14 @@ section {
 
 .inline {
     display: inline;
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+.margin-bottom-adjust {
+    margin-bottom: -45px;
 }
 
 a {
@@ -283,10 +291,6 @@ main {
     margin-left: 12px;
 }
 
-hr {
-    width: 288px;
-}
-
 #customize {
     font-weight: bold;
     padding: 2%;
@@ -329,7 +333,7 @@ fieldset {
 .card,
 .add {
     height: 33vmin;
-    flex: 0 0 30vmin;
+    flex: 0 0 175px;
     margin-left: 3vmin;
     background-color: var(--straw);
     overflow-y: auto;
@@ -377,6 +381,14 @@ fieldset {
     grid-column: span 2;
 }
 
+#forecast {
+    width: 75%;
+    padding: 20px 0;
+    margin: 10px 0 -20px 0;
+    justify-content: space-around;
+    text-align: center;
+}
+
 .place {
     color: white;
     height: 40vh;
@@ -418,7 +430,6 @@ fieldset {
 #custom-drink h2 {
     font-size: 2.7em;
     margin-top: 0.6em;
-    margin-bottom: 0;
     text-align: center;
 }
 
@@ -463,7 +474,7 @@ fieldset {
     padding: 20px;
     display: inline;
     margin: 20px;
-    font-size: 0.5em;
+    font-size: 1.1em;
 }
 
 #selection {
@@ -502,7 +513,7 @@ fieldset {
     opacity: 1;
 }
 
-#selection:hover {
+.usepointer:hover {
     cursor: pointer;
 }
 
@@ -553,12 +564,41 @@ fieldset {
     padding: 6px;
 }
 
+.nutrition hr {
+    width: 288px;
+}
+
 .nutrition h4 {
     font-family: Helvetica, sans-serif;
     text-shadow: none;
     font-size: 2em;
     color: black;
     margin: 0;
+}
+
+.nutrition hr:nth-child(2),
+.nutrition hr:nth-child(17) {
+    border: 6px solid black;
+}
+
+.nutrition hr:nth-child(5) {
+    border: 3px solid black;
+}
+
+.nutrition div:nth-child(3),
+.nutrition div:nth-child(4) {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nutrition div:nth-child(6),
+.nutrition div:nth-child(9),
+.nutrition div:nth-child(15) {
+    font-weight: bold;
+}
+
+.nutrition div:nth-child(12) {
+    margin-left: 12px;
 }
 
 /* ~ ABOUT PAGE */

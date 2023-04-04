@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <img src="images/icon-700-488.png" width="75" height="52">
+        <img alt="Collection of fruit, piled around a pineapple" src="images/icon-700-488.png" width="75" height="52">
         <h1>Bountiful Foods</h1>
         <nav>
             <a href="index.html">Home</a>
@@ -33,53 +33,56 @@
     </header>
     <main id="custom-drink" class="flex-h wrap">
         <div class="base-box flex-v centered">
-            <h2>Choose your drink base:<p id="selected">[ select ]</p>
-            </h2>
-            <div id="selection">
-                <img src="images/selection-800-667.png" width="600" height="500">
-                <div id="raspberry" class="select raspberry_clear"><!--raspberry--></div>
-                <div id="cherry" class="select cherry_clear"><!--cherry--></div>
-                <div id="persimmon" class="select persimmon_clear"><!--persimmon--></div>
-                <div id="orange" class="select orange_clear"><!--orange--></div>
-                <div id="lemon" class="select lemon_clear"><!--lemon--></div>
-                <div id="pear" class="select pear_clear"><!--pear--></div>
-                <div id="kiwi" class="select kiwi_clear"><!--kiwi--></div>
-                <div id="lime" class="select lime_clear"><!--lime--></div>
-                <div id="mango" class="select mango_clear"><!--mango--></div>
-                <div id="blackberry" class="select blackberry_clear"><!--blackberry--></div>
+            <div class="flex-h centered margin-bottom-adjust">
+                <h2 class="inline">Choose your drink base:</h2>
+                <p id="selected" class="inline bold">[ select ]</p>
+            </div>
+            <div id="selection" class="usepointer">
+                <img alt="Ten fruits each splashing in their own colored drink" src="images/selection-800-667.png"
+                    width="600" height="500">
+                <div id="Raspberry" class="select raspberry_clear"><!--raspberry--></div>
+                <div id="Cherry" class="select cherry_clear"><!--cherry--></div>
+                <div id="Persimmon" class="select persimmon_clear"><!--persimmon--></div>
+                <div id="Orange" class="select orange_clear"><!--orange--></div>
+                <div id="Lemon" class="select lemon_clear"><!--lemon--></div>
+                <div id="Pear" class="select pear_clear"><!--pear--></div>
+                <div id="Kiwi" class="select kiwi_clear"><!--kiwi--></div>
+                <div id="Lime" class="select lime_clear"><!--lime--></div>
+                <div id="Mango" class="select mango_clear"><!--mango--></div>
+                <div id="Blackberry" class="select blackberry_clear"><!--blackberry--></div>
             </div>
         </div>
         <div class="base-box flex-v centered">
             <form id="drink-designer" class="centered">
-                <h2>Custom Drink Designer</h2>
+                <h2 style="margin-bottom: 0;" >Custom Drink Designer</h2>
                 <fieldset id="drink-fieldset">
                     <label>Drink Name<input name="drinkname" type="text" placeholder="My Custom Drink" required></label>
-                    <label>Base Mixture<select name="drinkbase" id="insert-base" type="text" required>
+                    <label>Base Mixture<select name="drinkbase" id="insert-base" required>
                             <option value="">------ Drink Base ------</option>
-                            <option value="raspberry">raspberry</option>
-                            <option value="cherry">cherry</option>
-                            <option value="persimmon">persimmon</option>
-                            <option value="orange">orange</option>
-                            <option value="lemon">lemon</option>
-                            <option value="pear">pear</option>
-                            <option value="kiwi">kiwi</option>
-                            <option value="lime">lime</option>
-                            <option value="mango">mango</option>
-                            <option value="blackberry">blackberry</option>
+                            <option value="Raspberry">Raspberry</option>
+                            <option value="Cherry">Cherry</option>
+                            <option value="Persimmon">persimmon</option>
+                            <option value="Orange">Orange</option>
+                            <option value="Lemon">Lemon</option>
+                            <option value="Pear">Pear</option>
+                            <option value="Kiwi">Kiwi</option>
+                            <option value="Lime">Lime</option>
+                            <option value="Mango">Mango</option>
+                            <option value="Blackberry">Blackberry</option>
                         </select></label>
-                    <label>Add Ingredient<select name="ingredient1" type="text" required>
+                    <label>Add Ingredient<select name="ingredient1" required>
                             <option value="">----- Ingredient 1 -----</option>
                         </select></label>
-                    <label>Add Ingredient<select name="ingredient2" type="text" required>
+                    <label>Add Ingredient<select name="ingredient2" required>
                             <option value="">----- Ingredient 2 -----</option>
                         </select></label>
                     <label>Special Instructions:<textarea name="specialinstructions"></textarea></label>
                 </fieldset>
-                <input id="datetime" type="datetime-local" value="" hidden>
+                <input id="datetime" name="submitdate" type="datetime-local" value="" hidden>
                 <input type="submit" value="SAVE YOUR DRINK" class="submit">
             </form>
         </div>
-        <div id="drink-display" class="base-box flex-v">
+        <!-- <div id="drink-display" class="base-box flex-v" style="display: none;">
             <h3>Drink Name</h3>
             <ul class="scroll-visible">
                 <li>Base</li>
@@ -89,28 +92,28 @@
             </ul>
             <div class="nutrition flex-h wrap">
                 <h4>Nutrition Facts</h4>
-                <hr style="border: 6px solid black">
-                <div class="big bold">Calories</div>
-                <div id="calories" class="big bold">##</div>
-                <hr style="border: 3px solid black">
-                <div class="bold">Total Fat</div>
-                <div id="fat">##</div>
                 <hr>
-                <div class="bold">Total Carbohydrates</div>
-                <div id="carbs">##</div>
+                <div>Calories</div>
+                <div id="calories-N">##</div>
                 <hr>
-                <div class="indent">Sugar</div>
-                <div id="sugar">##</div>
+                <div>Total Fat</div>
+                <div id="fat-N">##</div>
                 <hr>
-                <div class="bold">Protein</div>
-                <div id="protien">##</div>
-                <hr style="border: 6px solid black">
+                <div>Total Carbohydrates</div>
+                <div id="carbs-N">##</div>
+                <hr>
+                <div>Sugar</div>
+                <div id="sugar-N">##</div>
+                <hr>
+                <div>Protein</div>
+                <div id="protien-N">##</div>
+                <hr>
             </div>
             <p>Account: FirstName<br>
                 Email:<br>
                 Phone:<br>
                 Order date: ///////////</p>
-        </div>
+        </div> -->
     </main>
     <div id="freshchecklogin" class="mask">
         <p>Please make an account to unlock this feature</p>
