@@ -309,7 +309,7 @@ main {
     min-height: 90vh;
     padding: 5vh;
     gap: 5vh;
-    flex: 1 0 20vw;
+    flex: 0 0 30vw;
 }
 
 .tile,
@@ -360,6 +360,7 @@ fieldset {
 }
 
 #mydrinks {
+    min-width: 50vw;
     flex-grow: 2;
     background-color: var(--mantis);
     overflow-x: auto;

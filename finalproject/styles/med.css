@@ -1,0 +1,13 @@
+#weather {
+    min-width: 85vw;
+}
+
+header {
+    height: fit-content;
+}
+
+nav {
+    width: 100%;
+    flex-direction: row;
+    /* min-height: 30vh; */
+}
